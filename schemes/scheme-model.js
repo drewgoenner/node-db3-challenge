@@ -35,7 +35,7 @@ function add(scheme) {
 function update(changes, id) {
     return db('schemes') 
       .where({ id })
-      .insert(changes);
+      .update(changes);
     
 };
 
